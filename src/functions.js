@@ -1,5 +1,4 @@
 import moment from 'moment';
-import key from './config.js';
 
 const axios = require('axios');
 
@@ -8,7 +7,7 @@ export default async function getFlights(days, code, budget) {
 
   var options = [];
 
-  var response = await axios.get("http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/UK/gbp/en-GB/" + code + "/anywhere/" + tomorrow + "?apikey=" + key)
+  var response = await axios.get("http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/UK/gbp/en-GB/" + code + "/anywhere/" + tomorrow + "?apikey=" + process.env.apikey)
     .then()
     .catch((err) => {
       console.error(err);
