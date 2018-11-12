@@ -267,6 +267,10 @@ a:hover {
     padding: 30px 0;
   }
 
+  .options {
+    top: 0px;
+  }
+
   #preCity {
     margin-bottom: 10px;
   }
