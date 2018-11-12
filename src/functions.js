@@ -7,12 +7,16 @@ export default async function getFlights(days, code, budget) {
 
   var options = [];
 
-  var response = await axios.get("http://partners.api.skyscanner.net/apiservices/browsequotes/v1.0/UK/gbp/en-GB/" + code + "/anywhere/" + tomorrow + "?apikey=" + process.env.apikey)
+  var response = await axios.get(process.env.PUBLIC_URL + "/.netlify/functions/skyscanner", {
+      params: {
+        code: code,
+        date: tomorrow
+      }
+    })
     .then()
     .catch((err) => {
       console.error(err);
     })
-    console.log(response);
 
   var quotes = response.data.Quotes.sort(function(a, b) {
     return a.MinPrice - b.MinPrice;
