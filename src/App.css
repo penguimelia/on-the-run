@@ -269,6 +269,7 @@ a:hover {
 
   .options {
     top: 0px;
+    bottom: auto;
   }
 
   #preCity {
