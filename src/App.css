@@ -76,10 +76,10 @@ a:hover {
 }
 
 .main{
-  height: 600px;
+  height: 100%;
   width: 600px;
   position: relative;
-  margin: 130px auto;
+  margin: 50px auto 0px auto;
 }
 
 .landing {
@@ -131,8 +131,7 @@ a:hover {
 }
 
 .location {
-  padding-top: 60px;
-  margin-bottom: 50px;
+  padding: 60px 0 50px 0;
 }
 
 #preCity {
@@ -141,7 +140,7 @@ a:hover {
 
 #city {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 #nextMove {
@@ -241,4 +240,55 @@ a:hover {
 
 .help .leave {
   color: #2ED6D4;
+}
+
+@media only screen and (max-width: 620px) {
+  h1 { font-size: 80px; }
+  h2 { font-size: 60px; }
+  h3 { font-size: 40px; }
+
+  .main {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 { font-size: 60px; }
+  h2 { font-size: 50px; }
+  h3 { font-size: 35px; }
+  h4 { font-size: 25px; }
+  p { font-size: 20px; }
+
+  .main {
+    width: 350px;
+  }
+
+  .location {
+    padding: 30px 0;
+  }
+
+  #preCity {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 { font-size: 60px; }
+  h2 { font-size: 50px; }
+  h3 { font-size: 35px; }
+  h4 { font-size: 25px; }
+  p { font-size: 20px; }
+
+  .main {
+    width: 320px;
+    margin-top: 20px;
+  }
+
+  .moves {
+    flex-direction: column;
+  }
+
+  .moves > :first-child {
+    margin-bottom: 10px;
+  }
 }
