@@ -1,0 +1,244 @@
+body {
+  font-family: 'CaveStoryRegular', monospace;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  background: black;
+  text-align: center;
+}
+
+h1 { font-size: 90px; }
+h2 { font-size: 70px; }
+h3 { font-size: 50px; }
+h4 { font-size: 40px; }
+p { font-size: 30px; }
+
+button {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'CaveStoryRegular', monospace;
+  font-size: 40px;
+  color: white;
+  background: black;
+  border-radius: 2px;
+}
+
+button:disabled {
+  cursor: default;
+  color: grey;
+}
+
+button:disabled::before {
+  border-top: 4px grey solid;
+  border-bottom: 4px grey solid;
+}
+
+button:disabled::after {
+  border-left: 4px grey solid;
+  border-right: 4px grey solid;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  top: -4px;
+  left: 0;
+  border-top: 4px white solid;
+  border-bottom: 4px white solid;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  left: -4px;
+  top: 0;
+  border-left: 4px white solid;
+  border-right: 4px white solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+}
+
+.main{
+  height: 600px;
+  width: 600px;
+  position: relative;
+  margin: 130px auto;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  width: 300px;
+}
+
+.title {
+  margin: 0px;
+}
+
+.titleImg {
+  margin: 40px 0;
+}
+
+.gameover h2 {
+  margin-top: 120px;
+}
+
+.stats h4 {
+  margin: 0px;
+}
+
+.score {
+  margin-top: 20px;
+}
+
+.runners{
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#budget {
+  float: left;
+  margin: 10px;
+}
+
+#currentDay {
+  float: right;
+  margin: 10px;
+}
+
+.location {
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+
+#preCity {
+  margin-bottom: 20px;
+}
+
+#city {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+#nextMove {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.moves {
+  display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.buttons p {
+  margin: 0px;
+}
+
+.options {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  bottom: 10px;
+  background: black;
+}
+
+.options button {
+  width: 90%;
+}
+
+.options button p {
+  margin: 0;
+}
+
+.options:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  top: -4px;
+  left: 0;
+  border-top: 4px white solid;
+  border-bottom: 4px white solid;
+}
+
+.options:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+  left: -4px;
+  top: 0;
+  border-left: 4px white solid;
+  border-right: 4px white solid;
+  pointer-events: none;
+}
+
+.backButton {
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.help {
+  overflow:scroll;
+}
+
+.help h4 {
+  margin: 20px 0;
+}
+
+.help p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.help ol li {
+  font-size: 28px;
+  text-align: left;
+  margin: 3px;
+}
+
+.help .backButton {
+  margin: 20px auto;
+}
+
+.help .sky {
+  color: #00b2d6;
+}
+
+.help .stay {
+  color: #FF5E5B;
+}
+
+.help .leave {
+  color: #2ED6D4;
+}
