@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Runner from './img/runner2.gif'
+import Runner from './img/runner.gif'
 
 class Start extends React.Component {
   constructor(props) {

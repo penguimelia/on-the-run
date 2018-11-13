@@ -39,6 +39,8 @@ class Howtoplay extends React.Component {
       <p>Score = Days Survived x Money Left</p>
 
       <button className="backButton" onClick={this.backButton}>(B)ack</button>
+      <span className="credits">Built with React. Git repo <a href="https://github.com/penguimelia/on-the-run">here.</a></span><br/>
+      <span className="credits">Credits to <a href="https://www.deviantart.com/sssashimi">sssashimi</a> for the runner gif.</span>
     </div>);
   }
 }

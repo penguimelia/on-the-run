@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Starts from './startLocations.js'
-import Runner from './img/runner2.gif'
+import Runner from './img/runner.gif'
 import Mafia from './img/mafia.gif'
 
 import Gameover from './Gameover.js'
@@ -56,9 +56,8 @@ class Game extends React.Component {
     var fate = this.isCaptured();
     var currentCity = this.state.location;
     var newBudget = this.state.budget + currentCity.return;
-    console.log(fate);
-    if (!fate) {
 
+    if (!fate) {
       if (currentCity.risk < 90) {
         if (this.state.day === 1 && currentCity.risk < 50) {
           currentCity.risk = 50
@@ -87,7 +86,6 @@ class Game extends React.Component {
   }
 
   toggleMenu = () => {
-    console.log(this.state.toggleMenu);
     this.setState({toggleMenu: !this.state.toggleMenu});
   }
 

@@ -226,20 +226,24 @@ a:hover {
   margin: 3px;
 }
 
-.help .backButton {
+.backButton {
   margin: 20px auto;
 }
 
-.help .sky {
+.sky {
   color: #00b2d6;
 }
 
-.help .stay {
+.stay {
   color: #FF5E5B;
 }
 
-.help .leave {
+.leave {
   color: #2ED6D4;
+}
+
+.credits {
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 620px) {
@@ -259,6 +263,10 @@ a:hover {
   h4 { font-size: 25px; }
   p { font-size: 20px; }
 
+  button {
+    font-size: 25px;
+  }
+
   .main {
     width: 350px;
   }
@@ -275,15 +283,22 @@ a:hover {
   #preCity {
     margin-bottom: 10px;
   }
+
+  .help p {
+    font-size: 18px;
+  }
+
+  .help ol li {
+    font-size: 22px;
+  }
+
+  .credits {
+    font-size: 15px;
+  }
+
 }
 
 @media only screen and (max-width: 350px) {
-  h1 { font-size: 60px; }
-  h2 { font-size: 50px; }
-  h3 { font-size: 35px; }
-  h4 { font-size: 25px; }
-  p { font-size: 20px; }
-
   .main {
     width: 320px;
     margin-top: 20px;
