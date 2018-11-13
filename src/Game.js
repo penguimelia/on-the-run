@@ -109,7 +109,7 @@ class Game extends React.Component {
     this.setState({
       budget: 200,
       day: 1,
-      location: {},
+      location: {name: '. . .'},
       options: [],
       gameover: false,
       toggleMenu: false
